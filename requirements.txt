@@ -1,3 +1,13 @@
+
+pandas==2.1.4
+scipy==1.11.3
+pytz==2023.3.post1
+plotly==5.18.0
+openpyxl
+click
+protobuf==3.20.1
+nba_api
+requests
 flask==2.2.5
 Werkzeug==2.3.7
 jinja2==3.1.2
@@ -9,14 +19,9 @@ flask-sqlalchemy==3.0.5
 sqlalchemy==2.0.21
 email_validator==2.0.0
 flask-restx==1.1.0
-
 python-dotenv==0.19.2
-
 gunicorn==20.1.0
 Flask-Minify==0.37
-
 flask-dance==7.0.0
 blinker==1.6.2
 
-# flask_mysqldb
-# psycopg2-binary

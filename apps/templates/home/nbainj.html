@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Injuries</title>
+</head>
+<body>
+    <h1>NBA Injuries 🚫</h1>
+    
+    <form action="/injuries" method="get">
+        <label for="team">Select Team:</label>
+        <select name="team" id="team">
+            {% for team in teams %}
+                {% if team == selected_team %}
+                    <option value="{{ team }}" selected>{{ team }}</option>
+                {% else %}
+                    <option value="{{ team }}">{{ team }}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+        {{ html_table | safe }}
+    </div>
+</body>
+</html>
